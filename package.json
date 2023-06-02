@@ -1,0 +1,49 @@
+{
+  "name": "learninbox",
+  "version": "1.0.0",
+  "description": "this is an rest full api for learninbox system",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon run lint",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d"
+  },
+  "author": "Backend team of learninbox",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.36.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.3.0",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.0",
+    "helmet": "^5.1.0",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.4",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.7.2",
+    "npm": "^9.6.7",
+    "passport": "^0.6.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "proxy-addr": "^2.0.7",
+    "speakeasy": "^2.0.0",
+    "streamifier": "^0.1.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/formidable": "^2.0.5",
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
